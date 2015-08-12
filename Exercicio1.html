@@ -2,16 +2,25 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	  <title>Exercicio 01</title>
-	    <script type="text/javascript">
+	<title>Exercicio 01</title>
+	<script type="text/javascript">
 		
-		    var Nome="Alex";
-			  alert(Nome);
+		var Nome="Alex";
+			alert(Nome);
 
+			function Painel() {
+				document.write("<p> Acesso restrito </p>");	
+			}
 
-	    </script>
+	</script>
 </head>
 <body>
+	<script type="text/javascript">
+		document.write("Bem vindo <strong>" + Nome +" </strong>");
+		document.write("<br>");
+			Painel();
+			
+	</script>
 
 </body>
 </html>
