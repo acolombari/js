@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta  http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<title>Array 1</title>
+</head>
+<body>
+ 									<!-- Exemplo 1 -->
+<script type="text/javascript">
+	FRUTAS = new Array(3);
+	FRUTAS[0] = "MAÇÃ";
+	FRUTAS[1] = "MANGA";
+	FRUTAS[2] = "LARANJA";
+		document.write("A fruta de minha preferencia é: ", FRUTAS[1]);
+</script>
+<hr>
+									<!-- Exemplo 2 -->
+<script type="text/javascript">
+	var nomes = new Array();
+	nomes[0] = "MATHEUS";
+	nomes[1] = "BARBI";
+	nomes[2] = "MÔNICA";
+	nomes[3] = "ELIO";
+	nomes[4] = "JEREMIAS";
+		document.write("OS VALORES DO ARRAY SÃO:<br><br>");
+		for(i = 0; i < nomes.length; i++){
+			document.write(nomes[i] + "<hr>");
+		}
+</script>
+<hr>
+									<!-- Exemplo 3 -->
+<script type="text/javascript">
+	document.write("<H1> ----------------------------------------------------------</H1>");
+	var SEMANA = new Array(6);
+		SEMANA[0] = "Domingo";
+		SEMANA[1] = "Segunda-feira";
+		SEMANA[2] = "Terça-feira";
+		SEMANA[3] = "Quarta-feira";
+		SEMANA[4] = "Quinta-feira";
+		SEMANA[5] = "Sexta-feira";
+		SEMANA[6] = "Sábado";
+
+	for(i = 0; i < SEMANA[0].length; i++){
+		document.write(SEMANA[i] + "<br>");
+	}	
+	document.write("<H1> ----------------------------------------------------------</H1>");
+</script>									
+</body>
+</html>
