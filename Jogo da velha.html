@@ -4,12 +4,13 @@
 	<meta charset="utf-8">
 	<title>Jogo da velha</title>
 <script type="text/javascript">
+	
 	//Essa variável mostra de quem é o turno
 	
 	var turno = "x";
-
+	
 	//Essa função é chamada ao clicar em uma célula
-
+	
 	function joga(celula){
 		if(document.getElementById(celula).innerHTML == "-"){
 			if(turno == "x"){
@@ -21,19 +22,159 @@
 			}
 		}
 	}
-		//Jogdor X vence - PS: dar continuação...
+	
+	//Jogdor X vence - PS: dar continuação...
+	
 	function fim(){
 		if(document.getElementById("L1C1").innerHTML == "X" &&
 			document.getElementById("L1C2").innerHTML == "X" &&
 			document.getElementById("L1C3").innerHTML == "X"){
-			alert("O jogador X venceu!");
-			
+			alert("O jogador 'X' venceu!");
+			reset();
 		}		
 	}
+	function fim2() {
+		if(document.getElementById("L2C1").innerHTML == "X" &&
+			document.getElementById("L2C2").innerHTML == "X" &&
+			document.getElementById("L2C3").innerHTML == "X"){
+			alert("O jogador 'X' venceu!");
+			reset();
+		}
+	}
+	function fim3() {
+		if(document.getElementById("L3C1").innerHTML == "X" &&
+			document.getElementById("L3C2").innerHTML == "X" &&
+			document.getElementById("L3C3").innerHTML == "X"){
+			alert("O jogador 'X' venceu!");
+			reset();
+		}
+	}
+	function fim4() {
+		if(document.getElementById("L1C1").innerHTML == "X" &&
+			document.getElementById("L2C1").innerHTML == "X" &&
+			document.getElementById("L3C1").innerHTML == "X"){
+			alert("O jogador 'X' venceu!");
+			reset();
+		}
+	}
+	function fim5() {
+		if(document.getElementById("L1C2").innerHTML == "X" &&
+			document.getElementById("L2C2").innerHTML == "X" &&
+			document.getElementById("L3C2").innerHTML == "X"){
+			alert("O jogador 'X' venceu!");
+			reset();
+		}
+	}
+	function fim6() {
+		if(document.getElementById("L1C3").innerHTML == "X" &&
+			document.getElementById("L2C3").innerHTML == "X" &&
+			document.getElementById("L3C3").innerHTML == "X"){
+			alert("O jogador 'X' venceu!");
+			reset();
+		}
+	}
+	function fim7() {
+		if(document.getElementById("L1C1").innerHTML == "X" &&
+			document.getElementById("L2C2").innerHTML == "X" &&
+			document.getElementById("L3C3").innerHTML == "X"){
+			alert("O jogador 'X' venceu!");
+			reset();
+		}
+	}	
+	function fim8() {
+		if(document.getElementById("L1C3").innerHTML == "X" &&
+			document.getElementById("L2C2").innerHTML == "X" &&
+			document.getElementById("L3C1").innerHTML == "X"){
+			alert("O jogador 'X' venceu!");
+			reset();
+		}
+	}
+
+	//Jogdor O vence - PS: dar continuação...
+
+	function fim9(){
+		if(document.getElementById("L1C1").innerHTML == "O" &&
+			document.getElementById("L1C2").innerHTML == "O" &&
+			document.getElementById("L1C3").innerHTML == "O"){
+			alert("O jogador 'O' venceu!");
+			reset();
+		}		
+	}
+	function fim10() {
+		if(document.getElementById("L2C1").innerHTML == "O" &&
+			document.getElementById("L2C2").innerHTML == "O" &&
+			document.getElementById("L2C3").innerHTML == "O"){
+			alert("O jogador 'O' venceu!");
+			reset();
+		}
+	}
+	function fim11() {
+		if(document.getElementById("L3C1").innerHTML == "O" &&
+			document.getElementById("L3C2").innerHTML == "O" &&
+			document.getElementById("L3C3").innerHTML == "O"){
+			alert("O jogador O venceu!");
+			reset();
+		}
+	}
+	function fim12() {
+		if(document.getElementById("L1C1").innerHTML == "O" &&
+			document.getElementById("L2C1").innerHTML == "O" &&
+			document.getElementById("L3C1").innerHTML == "O"){
+			alert("O jogador 'O' venceu!");
+			reset();
+		}
+	}
+	function fim13() {
+		if(document.getElementById("L1C2").innerHTML == "O" &&
+			document.getElementById("L2C2").innerHTML == "O" &&
+			document.getElementById("L3C2").innerHTML == "O"){
+			alert("O jogador 'O' venceu!");
+			reset();
+		}
+	}
+	function fim14() {
+		if(document.getElementById("L1C3").innerHTML == "O" &&
+			document.getElementById("L2C3").innerHTML == "O" &&
+			document.getElementById("L3C3").innerHTML == "O"){
+			alert("O jogador 'O' venceu!");
+			reset();
+		}
+	}
+	function fim15() {
+		if(document.getElementById("L1C1").innerHTML == "O" &&
+			document.getElementById("L2C2").innerHTML == "O" &&
+			document.getElementById("L3C3").innerHTML == "O"){
+			alert("O jogador 'O' venceu!");
+			reset();
+		}
+	}	
+	function fim16() {
+		if(document.getElementById("L1C3").innerHTML == "O" &&
+			document.getElementById("L2C2").innerHTML == "O" &&
+			document.getElementById("L3C1").innerHTML == "O"){
+			alert("O jogador 'O' venceu!");
+			reset();
+		}
+	}
+
+
+	//Essa função limpa a tela
+	
+	function reset() {
+		var L, C;
+		for(L=1; L<=3; L++){
+			for(C=1; C<=3; C++){
+				var nomecelula = "L"+L+"C"+C;
+				document.getElementById(nomecelula).innerHTML = "-";
+			}
+		}
+	}
+
 </script>
 </head>
 <body>
-	<div onmouseover="fim();">
+	<h1 style="text-align: center;"> Jogo da velha </h1>
+	<div style="margin-left:45%; margin-top:10%;" onmouseover="fim(); fim2(); fim3(); fim4(); fim5(); fim6(); fim7(); fim8(); fim9(); fim10(); fim11(); fim12(); fim13(); fim14(); fim15(); fim16();">
 	<table width="100px" height="150px" border="2">
 		<!-- TER TUDO
 		      TR  TD
